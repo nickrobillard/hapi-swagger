@@ -49,13 +49,13 @@
         if (url && url.length > 1) {
             url = decodeURIComponent(url[1]);
         } else {
-            url = "{{ hapiSwagger.proxyPath }}{{{hapiSwagger.jsonPath}}}";
+            url = "{{{hapiSwagger.proxyPath}}}{{{hapiSwagger.jsonPath}}}";
         }
 
         // pull validatorUrl string or null form server
         var validatorUrl = null;
         {{#if hapiSwagger.validatorUrl}}
-        validatorUrl: '{{ hapiSwagger.proxyPath }}{{hapiSwagger.validatorUrl}}';
+        validatorUrl: '{{hapiSwagger.validatorUrl}}';
         {{/if}}
 
         var ACCESS_TOKEN_QUERY_PARAM_NAME = 'access_token';
