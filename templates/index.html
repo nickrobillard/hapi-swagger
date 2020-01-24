@@ -55,7 +55,7 @@
         // pull validatorUrl string or null form server
         var validatorUrl = null;
         {{#if hapiSwagger.validatorUrl}}
-        validatorUrl: '{{hapiSwagger.proxyPath}}{{hapiSwagger.validatorUrl}}';
+        validatorUrl: '{{hapiSwagger.validatorUrl}}';
         {{/if}}
 
         var ACCESS_TOKEN_QUERY_PARAM_NAME = 'access_token';
